@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/pranaysinghvi/Library/CloudStorage/OneDrive-Personal/SPIT College/3)Class/Semester 6/3)BAP/1)Experiments/ven-bap/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer.cli import cli_detect
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli_detect())
